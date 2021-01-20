@@ -6,6 +6,14 @@
           box-sizing: border-box;
 }
 
+body {
+  background: #fafafa;
+}
+
+nav {
+  position: absolute;
+}
+
 nav .navbar-brand {
   font-family: 'Montserrat';
   font-style: normal;
@@ -45,34 +53,64 @@ nav .nav-cta:hover {
 
 main {
   position: relative;
-  height: 85vh;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 main .hero-text {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
-  font-size: 96px;
+  font-weight: 500;
+  font-size: 88px;
   line-height: 132px;
-  padding: 4rem 10rem;
+  color: white;
+  text-align: center;
+}
+
+main .main-content {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+main .main-content p {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+  font-size: 24px;
+  line-height: 49px;
 }
 
 main .hero-img {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   position: absolute;
-  width: 1100px;
-  height: 524px;
-  right: 0;
-  top: 100px;
-  opacity: 35%;
+  top: 0;
   z-index: -1;
 }
 
 .sec1 {
   position: relative;
-  height: 60vh;
+  height: 100vh;
 }
 
 .sec1 .sec1-text {
+  position: relative;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -97,19 +135,431 @@ main .hero-img {
   transition: all 0.5s ease;
 }
 
-.sec1 .arrow:hover {
+.sec1 .sec1-img {
+  opacity: 1;
+  position: absolute;
+  width: 1100px;
+  height: 490px;
+  right: 0;
+  top: 200px;
+  z-index: -1;
+}
+
+.sec2 {
+  position: relative;
+  height: 100vh;
+}
+
+.sec2 .sec2-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 100px;
+  padding: 4rem 10rem;
+}
+
+.sec2 .arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 128px;
+  height: 34px;
+  left: 162px;
+  top: 320px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sec2 .arrow:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
 }
 
-.sec1 .sec1-img {
+.sec2 .sec2-img {
   position: absolute;
   width: 1100px;
-  height: 50vh;
+  height: 490px;
   right: 0;
   top: 200px;
   z-index: -1;
+}
+
+.sec3 {
+  position: relative;
+  height: 100vh;
+}
+
+.sec3 .sec3-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 100px;
+  padding: 4rem 10rem;
+}
+
+.sec3 .arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 128px;
+  height: 34px;
+  left: 162px;
+  top: 320px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sec3 .arrow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.sec3 .sec3-img {
+  position: absolute;
+  width: 1100px;
+  height: 490px;
+  right: 0;
+  top: 200px;
+  z-index: -1;
+}
+
+@media (min-width: 320px) {
+  main {
+    height: 50vh;
+  }
+  main .main-content .hero-text {
+    font-size: 64px;
+    line-height: 80px;
+  }
+  main .main-content p {
+    font-size: 16px !important;
+  }
+  .sec1 {
+    height: 70vh;
+  }
+  .sec1 .sec1-text {
+    text-align: center;
+    font-size: 32px;
+    padding: 2rem 3rem;
+  }
+  .sec1 .arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 120px;
+  }
+  .sec1 .sec1-img {
+    width: 100%;
+    height: 50vh;
+    padding: 1rem 2rem;
+  }
+  .sec2 {
+    height: 70vh;
+  }
+  .sec2 .sec2-text {
+    text-align: center;
+    font-size: 32px;
+    padding: 2rem 3rem;
+  }
+  .sec2 .arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 120px;
+  }
+  .sec2 .sec2-img {
+    width: 100%;
+    height: 50vh;
+    padding: 1rem 2rem;
+  }
+  .sec3 {
+    height: 60vh;
+  }
+  .sec3 .sec3-text {
+    text-align: center;
+    font-size: 32px;
+    padding: 2rem 3rem;
+  }
+  .sec3 .arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 120px;
+  }
+  .sec3 .sec3-img {
+    width: 100%;
+    height: 50vh;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  main {
+    height: 70vh;
+  }
+  main .main-content .hero-text {
+    font-size: 64px;
+    line-height: 80px;
+  }
+  main .main-content p {
+    font-size: 16px !important;
+  }
+  .sec1 {
+    height: 80vh;
+  }
+  .sec1 .sec1-text {
+    text-align: center;
+    font-size: 32px;
+    padding: 2rem 2.5rem;
+  }
+  .sec1 .arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 22%;
+  }
+  .sec1 .sec1-img {
+    padding: 1rem 2rem;
+    height: 50vh;
+    width: 100%;
+  }
+  .sec2 {
+    height: 80vh;
+  }
+  .sec2 .sec2-text {
+    text-align: center;
+    font-size: 32px;
+    padding: 2rem 2.5rem;
+  }
+  .sec2 .arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 22%;
+  }
+  .sec2 .sec2-img {
+    padding: 1rem 2rem;
+    height: 50vh;
+    width: 100%;
+  }
+  .sec3 {
+    height: 80vh;
+  }
+  .sec3 .sec3-text {
+    text-align: center;
+    font-size: 32px;
+    padding: 2rem 2.5rem;
+  }
+  .sec3 .arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 22%;
+  }
+  .sec3 .sec3-img {
+    padding: 1rem 2rem;
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    height: 80vh;
+  }
+  main .main-content .hero-text {
+    font-size: 72px;
+  }
+  main .main-content p {
+    font-size: 16px !important;
+  }
+  .sec1 {
+    height: 80vh;
+  }
+  .sec1 .sec1-text {
+    text-align: center;
+    font-size: 48px;
+    padding: 2rem 5rem;
+  }
+  .sec1 .arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 120px;
+  }
+  .sec1 .sec1-img {
+    width: 100%;
+    height: 50vh;
+  }
+  .sec2 {
+    height: 80vh;
+  }
+  .sec2 .sec2-text {
+    text-align: center;
+    font-size: 48px;
+    padding: 2rem 5rem;
+  }
+  .sec2 .arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 120px;
+  }
+  .sec2 .sec2-img {
+    width: 100%;
+    height: 50vh;
+  }
+  .sec3 {
+    height: 80vh;
+  }
+  .sec3 .sec3-text {
+    text-align: center;
+    font-size: 48px;
+    padding: 2rem 5rem;
+  }
+  .sec3 .arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 120px;
+  }
+  .sec3 .sec3-img {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    height: 90vh;
+  }
+  .sec1 {
+    position: relative;
+    height: 95vh;
+  }
+  .sec1 .sec1-text {
+    text-align: left;
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 100px;
+    padding: 4rem 5rem;
+  }
+  .sec1 .arrow {
+    position: absolute;
+    cursor: pointer;
+    width: 128px;
+    height: 34px;
+    left: 162px;
+    top: 180px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .sec1 .sec1-img {
+    opacity: 1;
+    position: absolute;
+    width: 70%;
+    height: 60vh;
+    right: 0;
+    top: 200px;
+    z-index: -1;
+  }
+  .sec2 {
+    position: relative;
+    height: 95vh;
+  }
+  .sec2 .sec2-text {
+    text-align: left;
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 100px;
+    padding: 4rem 5rem;
+  }
+  .sec2 .arrow {
+    position: absolute;
+    cursor: pointer;
+    width: 128px;
+    height: 34px;
+    left: 162px;
+    top: 180px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .sec2 .sec2-img {
+    opacity: 1;
+    position: absolute;
+    width: 70%;
+    height: 60vh;
+    right: 0;
+    top: 200px;
+    z-index: -1;
+  }
+  .sec3 {
+    position: relative;
+    height: 95vh;
+  }
+  .sec3 .sec3-text {
+    text-align: left;
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 100px;
+    padding: 4rem 5rem;
+  }
+  .sec3 .arrow {
+    position: absolute;
+    cursor: pointer;
+    width: 128px;
+    height: 34px;
+    left: 162px;
+    top: 180px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .sec3 .sec3-img {
+    opacity: 1;
+    position: absolute;
+    width: 70%;
+    height: 60vh;
+    right: 0;
+    top: 200px;
+    z-index: -1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
