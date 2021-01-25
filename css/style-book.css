@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+}
+
+nav {
+  position: absolute;
+}
+
+nav .navbar-brand {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+}
+
+nav ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
+nav .nav-cta {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #3a3a3a;
+  background: #fffef2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav .nav-cta:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #fffbd4;
+}
+
+.scrolled {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main {
+  position: relative;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+main .hero-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 88px;
+  line-height: 132px;
+  color: white;
+  text-align: center;
+}
+
+main .main-content {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+main .main-content p {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+  font-size: 24px;
+  line-height: 49px;
+}
+
+main .hero-img {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+section {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+section h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 88px;
+  color: #3a3a3a;
+}
+
+section .submit-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  width: 100%;
+  font-weight: bold;
+  color: #3a3a3a;
+  background: #fffedf;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section .submit-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: #fffbd4;
+}
+
+section .card h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
+section .card .card-img-top {
+  padding: 0rem 2rem;
+}
+
+@media (min-width: 320px) {
+  main {
+    height: 50vh;
+  }
+  main .main-content .hero-text {
+    font-size: 64px;
+    line-height: 80px;
+  }
+  main .main-content p {
+    font-size: 16px !important;
+  }
+  section h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 88px;
+    color: #3a3a3a;
+  }
+}
+
+@media (min-width: 576px) {
+  main {
+    height: 70vh;
+  }
+  main .main-content .hero-text {
+    font-size: 64px;
+    line-height: 80px;
+  }
+  main .main-content p {
+    font-size: 16px !important;
+  }
+  section h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 88px;
+    color: #3a3a3a;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    height: 80vh;
+  }
+  main .main-content .hero-text {
+    font-size: 72px;
+  }
+  main .main-content p {
+    font-size: 16px !important;
+  }
+  section h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 88px;
+    color: #3a3a3a;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    height: 90vh;
+  }
+  section h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 88px;
+    color: #3a3a3a;
+  }
+}
+/*# sourceMappingURL=style-book.css.map */
