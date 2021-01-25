@@ -115,7 +115,6 @@ main .hero-img {
   font-style: normal;
   font-weight: 600;
   font-size: 68px;
-  line-height: 100px;
   padding: 4rem 10rem;
 }
 
@@ -155,7 +154,6 @@ main .hero-img {
   font-style: normal;
   font-weight: 600;
   font-size: 68px;
-  line-height: 100px;
   padding: 4rem 10rem;
 }
 
@@ -242,7 +240,7 @@ main .hero-img {
     height: 50vh;
   }
   main .main-content .hero-text {
-    font-size: 64px;
+    font-size: 48px;
     line-height: 80px;
   }
   main .main-content p {
@@ -273,7 +271,7 @@ main .hero-img {
   .sec2 .sec2-text {
     text-align: center;
     font-size: 32px;
-    padding: 2rem 3rem;
+    padding: 4rem 3rem;
   }
   .sec2 .arrow {
     left: 50%;

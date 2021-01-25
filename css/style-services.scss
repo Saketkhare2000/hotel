@@ -85,7 +85,7 @@ section {
   .row1 {
     display: flex;
     justify-content: center;
-    height: 95vh;
+    // height: 95vh;
     .col1 {
       .desc {
         position: absolute;
@@ -152,7 +152,7 @@ section {
   .row2 {
     display: flex;
     justify-content: center;
-    height: 95vh;
+    // height: 95vh;
     .col1 {
       .desc {
         position: absolute;
@@ -217,374 +217,423 @@ section {
   }
 }
 
-// @media (min-width: 320px) {
-//   main {
-//     height: 50vh;
-//     .main-content {
-//       .hero-text {
-//         font-size: 64px;
-//         line-height: 80px;
-//       }
-//       p {
-//         font-size: 16px !important;
-//       }
-//     }
-//   }
-// }
+@media (min-width: 320px) {
+  main {
+    height: 50vh;
+    .main-content {
+      .hero-text {
+        font-size: 48px;
+        line-height: 80px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+  section {
+    .col1 {
+      height: 50vh;
+      .r1-img {
+        height: 30vh !important;
+      }
+      .desc {
+        text-align: center;
+        font-size: 32px !important;
+        top: 60% !important;
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80% !important;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    .col2 {
+      margin-top: 0px !important;
+      height: 50vh;
+      .r1-img {
+        height: 30vh !important;
+      }
+      .desc {
+        text-align: center;
+        font-size: 32px !important;
+        top: 60% !important;
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80% !important;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
 
-// @media (min-width: 576px) {
-//   main {
-//     height: 60vh;
-//     .main-content {
-//       .hero-text {
-//         font-size: 62px;
-//         line-height: 80px;
-//       }
-//       p {
-//         font-size: 16px !important;
-//       }
-//     }
-//   }
-//   section {
-//     .card1 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
+@media (min-width: 576px) {
+  main {
+    height: 60vh;
+    .main-content {
+      .hero-text {
+        font-size: 62px;
+        line-height: 80px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+  section {
+    .card1 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
 
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//     .card2 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+    .card2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
 
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//     .card3 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+    .card3 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
 
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//     .card4 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+    .card4 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
 
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//   }
-// }
-// @media (min-width: 768px) {
-//   main {
-//     height: 80vh;
-//     .main-content {
-//       .hero-text {
-//         font-size: 72px;
-//       }
-//       p {
-//         font-size: 16px !important;
-//       }
-//     }
-//   }
-//   section {
-//     .card1 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       width: 50%;
-//       padding: 3rem;
-//       .card-img {
-//         img {
-//           height: 40vh;
-//         }
-//       }
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//     .card2 {
-//       position: relative;
-//       display: flex;
-//       float: right;
-//       width: 50%;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
-//       .card-img {
-//         img {
-//           height: 40vh;
-//         }
-//       }
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//     .card3 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
-//       .card-img {
-//         display: flex;
-//         justify-content: center;
-//         img {
-//           height: 60vh;
-//           width: 80%;
-//         }
-//       }
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//     .card4 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
-//       .card-img {
-//         display: flex;
-//         justify-content: center;
-//         img {
-//           height: 60vh;
-//           width: 80%;
-//         }
-//       }
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//   }
-// }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  main {
+    height: 80vh;
+    .main-content {
+      .hero-text {
+        font-size: 72px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+  section {
+    .card1 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      width: 50%;
+      padding: 3rem;
+      .card-img {
+        img {
+          height: 40vh;
+        }
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+    .card2 {
+      position: relative;
+      display: flex;
+      float: right;
+      width: 50%;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
+      .card-img {
+        img {
+          height: 40vh;
+        }
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+    .card3 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
+      .card-img {
+        display: flex;
+        justify-content: center;
+        img {
+          height: 60vh;
+          width: 80%;
+        }
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+    .card4 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
+      .card-img {
+        display: flex;
+        justify-content: center;
+        img {
+          height: 60vh;
+          width: 80%;
+        }
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
 
-// @media (min-width: 992px) {
-//   main {
-//     height: 90vh;
-//   }
-//   section {
-//     .card1 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
-//       .card-img {
-//         display: flex;
-//         justify-content: center;
-//         img {
-//           height: 30vh;
-//           width: 80%;
-//         }
-//       }
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//     .card2 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
-//       .card-img {
-//         display: flex;
-//         justify-content: center;
-//         img {
-//           height: 60vh;
-//           width: 80%;
-//         }
-//       }
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//     .card3 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
-//       .card-img {
-//         display: flex;
-//         justify-content: center;
-//         img {
-//           height: 60vh;
-//           width: 80%;
-//         }
-//       }
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//     .card4 {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       height: 80vh;
-//       padding: 3rem;
-//       .card-img {
-//         display: flex;
-//         justify-content: center;
-//         img {
-//           height: 60vh;
-//           width: 80%;
-//         }
-//       }
-//       .arrow {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 162px;
-//         top: 89%;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         font-family: Montserrat;
-//         font-style: normal;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 17px;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//   }
-// }
+@media (min-width: 992px) {
+  main {
+    height: 90vh;
+  }
+  section {
+    .card1 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
+      .card-img {
+        display: flex;
+        justify-content: center;
+        img {
+          height: 30vh;
+          width: 80%;
+        }
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+    .card2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
+      .card-img {
+        display: flex;
+        justify-content: center;
+        img {
+          height: 60vh;
+          width: 80%;
+        }
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+    .card3 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
+      .card-img {
+        display: flex;
+        justify-content: center;
+        img {
+          height: 60vh;
+          width: 80%;
+        }
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+    .card4 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding: 3rem;
+      .card-img {
+        display: flex;
+        justify-content: center;
+        img {
+          height: 60vh;
+          width: 80%;
+        }
+      }
+      .arrow {
+        position: absolute;
+        cursor: pointer;
+        left: 162px;
+        top: 89%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
