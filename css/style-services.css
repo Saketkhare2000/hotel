@@ -1,4 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+footer {
+  margin-top: 10px;
+  overflow-x: hidden;
+  font-family: Montserrat;
+}
+
+footer .strip1 {
+  background-color: #fffef2;
+  color: black;
+}
+
+footer .strip1 h5 {
+  font-weight: 500;
+}
+
+footer .strip1 a,
+footer .strip1 i {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+footer .strip1 a:hover,
+footer .strip1 i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+footer .strip2 {
+  background-color: #cae8d9;
+}
+
+footer .strip2 p {
+  font-weight: 500;
+}
+
+footer .strip2 a {
+  color: #171b60;
+  font-weight: 500;
+}
+
+footer .strip3 {
+  font-weight: 500;
+  background-color: #45ae9f;
+  color: black;
+}
+
+footer a {
+  color: #171b60;
+  font-weight: 500;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -124,7 +189,6 @@ section .row1 .col1 .desc {
   font-weight: bold;
   font-size: 48px;
   line-height: 59px;
-  /* identical to box height */
   color: #3a3a3a;
 }
 
@@ -264,10 +328,10 @@ section .row2 .r1-img {
     font-size: 16px !important;
   }
   section .col1 {
-    height: 50vh;
+    height: 60vh;
   }
   section .col1 .r1-img {
-    height: 30vh !important;
+    height: 30vh;
   }
   section .col1 .desc {
     text-align: center;
@@ -289,10 +353,10 @@ section .row2 .r1-img {
   }
   section .col2 {
     margin-top: 0px !important;
-    height: 50vh;
+    height: 60vh;
   }
   section .col2 .r1-img {
-    height: 30vh !important;
+    height: 30vh;
   }
   section .col2 .desc {
     text-align: center;
@@ -316,7 +380,7 @@ section .row2 .r1-img {
 
 @media (min-width: 576px) {
   main {
-    height: 60vh;
+    height: 60vh !important;
   }
   main .main-content .hero-text {
     font-size: 62px;
@@ -324,6 +388,15 @@ section .row2 .r1-img {
   }
   main .main-content p {
     font-size: 16px !important;
+  }
+  section .col1 {
+    height: 65vh;
+  }
+  section .col2 {
+    height: 65vh;
+  }
+  section .r1-img {
+    height: 40vh !important;
   }
   section .card1 {
     position: relative;

@@ -1,0 +1,65 @@
+footer {
+  margin-top: 10px;
+  overflow-x: hidden;
+  font-family: Montserrat;
+}
+
+footer .strip1 {
+  background-color: #fffef2;
+  color: black;
+}
+
+footer .strip1 h5 {
+  font-weight: 500;
+}
+
+footer .strip1 a,
+footer .strip1 i {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+footer .strip1 a:hover,
+footer .strip1 i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+footer .strip2 {
+  background-color: #cae8d9;
+}
+
+footer .strip2 p {
+  font-weight: 500;
+}
+
+footer .strip2 a {
+  color: #171b60;
+  font-weight: 500;
+}
+
+footer .strip3 {
+  font-weight: 500;
+  background-color: #45ae9f;
+  color: black;
+}
+
+footer a {
+  color: #171b60;
+  font-weight: 500;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,3 +1,4 @@
+@import 'footer';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
   margin: 0;
@@ -85,7 +86,6 @@ section {
   .row1 {
     display: flex;
     justify-content: center;
-    // height: 95vh;
     .col1 {
       .desc {
         position: absolute;
@@ -97,8 +97,6 @@ section {
         font-weight: bold;
         font-size: 48px;
         line-height: 59px;
-        /* identical to box height */
-
         color: #3a3a3a;
       }
       .arrow {
@@ -232,9 +230,9 @@ section {
   }
   section {
     .col1 {
-      height: 50vh;
+      height: 60vh;
       .r1-img {
-        height: 30vh !important;
+        height: 30vh;
       }
       .desc {
         text-align: center;
@@ -256,9 +254,9 @@ section {
     }
     .col2 {
       margin-top: 0px !important;
-      height: 50vh;
+      height: 60vh;
       .r1-img {
-        height: 30vh !important;
+        height: 30vh;
       }
       .desc {
         text-align: center;
@@ -283,7 +281,7 @@ section {
 
 @media (min-width: 576px) {
   main {
-    height: 60vh;
+    height: 60vh !important;
     .main-content {
       .hero-text {
         font-size: 62px;
@@ -295,6 +293,16 @@ section {
     }
   }
   section {
+
+    .col1{
+      height: 65vh;
+    }
+    .col2{
+      height: 65vh;
+    }
+    .r1-img {
+      height: 40vh !important;
+    }
     .card1 {
       position: relative;
       display: flex;

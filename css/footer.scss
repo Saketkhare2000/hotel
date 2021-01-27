@@ -1,0 +1,45 @@
+footer {
+  margin-top: 10px;
+  overflow-x: hidden;
+  font-family: Montserrat;
+  .strip1 {
+    background-color: #fffef2;
+    color: black;
+    h5 {
+      font-weight: 500;
+    }
+    a,
+    i {
+      text-decoration: none;
+      color: black;
+      transition: all 0.2s ease;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+  .strip2 {
+    background-color: #cae8d9;
+    p {
+      font-weight: 500;
+    }
+    a {
+      color: #171b60;
+      font-weight: 500;
+    }
+  }
+  .strip3 {
+    font-weight: 500;
+    background-color: #45ae9f;
+    color: black;
+  }
+  a {
+    color: #171b60;
+    font-weight: 500;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
