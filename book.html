@@ -30,9 +30,15 @@
     <title>HOTEL</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
       <div class="container">
-        <a class="navbar-brand mx-auto" href="#">LOGO</a>
+        <a class="navbar-brand mx-auto" href="index.html">
+          <img
+            src="svg/choice-hotels-seeklogo.com.svg"
+            alt="logo"
+            height="30px"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,7 +48,8 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <img src="svg/ham-menu.svg" alt="ham-menu" />
+          <!-- <img src="svg/ham-menu.svg" alt="ham-menu" style="color: white !important;"/> -->
+          <i class="fa fa-bars ham-menu" style="color: white"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,7 +60,7 @@
             <li class="nav-item mx-2">
               <a class="nav-link" href="Rooms.html">Rooms</a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item  abt_heading mx-2">
               <a class="nav-link" href="servies.html">Services</a>
             </li>
             <li class="nav-item mx-2">
@@ -64,8 +71,8 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <button class="btn nav-cta my-sm-0 mx-2" type="submit">
-              Book Now
+            <button class="btn active nav-cta my-sm-0 mx-2" type="submit">
+              <a href="book.html" class="book-btn">Book Now</a>
             </button>
             <li class="nav-item">
               <a class="nav-link" href="login.html">LogIn / SignUp</a>
@@ -79,12 +86,13 @@
         <h1 class="hero-text">Book Now</h1>
         <p>Lorem, ipsum dolor</p>
       </div>
-      <!-- <img
+      <img
         src="images/check-in.jpg"
         alt="hero-img"
-        class="hero-img img-fluid"
-      /> -->
+        class="hero-img d-block img-fluid"
+      />
     </main>
+
     <!--completed-->
     <section class="container">
       <div class="row my-3">
@@ -206,7 +214,7 @@
                 <strong>Price:-</strong>
                 4999/-
               </p>
-              <a href="" class="btn submit-btn">Book Now</a>
+             
             </div>
           </div>
         </div>

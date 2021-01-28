@@ -30,9 +30,15 @@
     <title>HOTEL</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
       <div class="container">
-        <a class="navbar-brand mx-auto" href="#">LOGO</a>
+        <a class="navbar-brand mx-auto" href="index.html">
+          <img
+            src="svg/choice-hotels-seeklogo.com.svg"
+            alt="logo"
+            height="30px"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,7 +48,8 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <img src="svg/ham-menu.svg" alt="ham-menu" />
+          <!-- <img src="svg/ham-menu.svg" alt="ham-menu" style="color: white !important;"/> -->
+          <i class="fa fa-bars ham-menu" style="color: white"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,21 +60,20 @@
             <li class="nav-item mx-2">
               <a class="nav-link" href="Rooms.html">Rooms</a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item  mx-2">
               <a class="nav-link" href="servies.html">Services</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link active" href="contact.html">Contact Us</a>
+            <li class="nav-item active mx-2">
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <!-- <button class="btn nav-cta my-sm-0 mx-2" type="submit">
-              <a href="book.html">Book Now</a>
-            </button> -->
-            <a href="book.html" class="btn nav-cta my-sm-0 mx-2">Book Now</a>
+            <button class="btn nav-cta my-sm-0 mx-2" type="submit">
+              <a href="book.html" class="book-btn">Book Now</a>
+            </button>
             <li class="nav-item">
               <a class="nav-link" href="login.html">LogIn / SignUp</a>
             </li>
@@ -83,7 +89,7 @@
       <img
         src="images/reception.jpg"
         alt="hero-img"
-        class="hero-img img-fluid"
+        class="hero-img d-block img-fluid"
       />
     </main>
     <section class="container mt-5">
@@ -151,7 +157,7 @@
     <div class="container faq mt-5">
       <h2>FAQs</h2>
       <div id="accordion">
-        <div class="card">
+        <div class="card mb-3">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
               <button
@@ -186,7 +192,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card mb-3">
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button

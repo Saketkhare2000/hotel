@@ -1,0 +1,39 @@
+nav {
+  position: absolute;
+  .navbar-brand {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+  }
+  ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #fff !important;
+  }
+  .active a {
+    color: #ffffff !important;
+    font-size: 18px;
+  }
+  .nav-cta {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #3a3a3a;
+    background: #ffface;
+    transition: all 0.3s ease;
+    a.book-btn {
+      color: #3a3a3a !important;
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+  }
+  .nav-cta:hover {
+    transform: scale(1.1);
+    background: #fdf7c4;
+  }
+}
+.ham {
+  color: black !important;
+}

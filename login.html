@@ -23,9 +23,75 @@
       crossorigin="anonymous"
     />
     <!--main css-->
-    <link rel="stylesheet" href="css/style-contact.css" />
+    <link rel="stylesheet" href="css/style-login.css">
+    <!-- <link rel="stylesheet" href="css/style-contact.css" /> -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+      nav {
+        position: absolute;
+      }
+
+      nav .navbar-brand {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+      }
+
+      nav ul li a {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        color: #3a3a3a !important;
+      }
+
+      nav .active a {
+        color: #3a3a3a !important;
+        font-size: 18px;
+      }
+
+      nav .nav-cta {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        color: #3a3a3a;
+        background: #ffface;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+
+      nav .nav-cta a.book-btn {
+        color: #3a3a3a !important;
+      }
+
+      nav .nav-cta a.book-btn:hover {
+        text-decoration: none !important;
+      }
+
+      nav .nav-cta:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background: #fdf7c4;
+      }
+
+      .ham {
+        color: black !important;
+      }
+      .scrolled {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        background-color: #fff !important;
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      .scrolled ul li a {
+        color: #3a3a3a !important;
+      }
+
+      .scrolled .ham-menu {
+        color: black !important;
+      }
+      /*# sourceMappingURL=navbar.css.map */
       * {
         margin: 0;
         padding: 0;
@@ -41,12 +107,12 @@
         -ms-user-select: none;
         user-select: none;
       }
-      button{
+      .container form button {
         background-color: #fffbd4 !important;
         font-weight: bold !important;
-        transition: all 0.5s ease;
+        transition: all 0.2s ease;
       }
-      button:hover{
+      .container form button:hover {
         background-color: #faf4c2 !important;
         transform: scale(1.1);
       }
@@ -65,9 +131,15 @@
     <title>HOTEL</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
       <div class="container">
-        <a class="navbar-brand mx-auto" href="#">LOGO</a>
+        <a class="navbar-brand mx-auto" href="index.html">
+          <img
+            src="svg/choice-hotels-seeklogo.com.svg"
+            alt="logo"
+            height="30px"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -77,7 +149,8 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <img src="svg/ham-menu.svg" alt="ham-menu" />
+          <!-- <img src="svg/ham-menu.svg" alt="ham-menu" style="color: white !important;"/> -->
+          <i class="fa fa-bars ham-menu" style="color: white"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -88,21 +161,20 @@
             <li class="nav-item mx-2">
               <a class="nav-link" href="Rooms.html">Rooms</a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item active mx-2">
               <a class="nav-link" href="servies.html">Services</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link active" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <!-- <button class="btn nav-cta my-sm-0 mx-2" type="submit">
-              <a href="book.html">Book Now</a>
-            </button> -->
-            <a href="book.html" class="btn nav-cta my-sm-0 mx-2">Book Now</a>
+            <button class="btn nav-cta my-sm-0 mx-2" type="submit">
+              <a href="book.html" class="book-btn">Book Now</a>
+            </button>
             <li class="nav-item">
               <a class="nav-link" href="login.html">LogIn / SignUp</a>
             </li>
@@ -110,7 +182,10 @@
         </div>
       </div>
     </nav>
-    <div class="container" style="width: 50%">
+    <div
+      class="container w-75 mt-5"
+      style="display: flex; flex-direction: column; justify-content: center"
+    >
       <form class="form-signin">
         <div class="img d-flex justify-content-center">
           <img
@@ -146,9 +221,7 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <button class="btn btn-lg btn-block" type="submit">
-              Sign in
-            </button>
+            <button class="btn btn-lg btn-block" type="submit">Sign in</button>
           </div>
           <div class="col-4">
             <button class="btn btn-lg btn-block" type="submit">

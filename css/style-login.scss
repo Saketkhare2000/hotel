@@ -1,0 +1,58 @@
+@import 'navbar';
+@import 'footer';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.ham {
+  color: black !important;
+}
+.scrolled {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.scrolled ul li a {
+  color: #3a3a3a !important;
+}
+
+.scrolled .ham-menu {
+  color: black !important;
+}
+/*# sourceMappingURL=navbar.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container form button {
+  background-color: #fffbd4 !important;
+  font-weight: bold !important;
+  transition: all 0.2s ease;
+}
+.container form button:hover {
+  background-color: #faf4c2 !important;
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 576px) {
+  .bd-placeholder-img-lg {
+    font-size: 2.5rem;
+  }
+}

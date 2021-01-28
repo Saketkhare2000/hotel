@@ -1,4 +1,5 @@
 @import 'footer';
+@import 'navbar';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
   margin: 0;
@@ -8,50 +9,29 @@
 body {
   background: #fafafa;
 }
-nav {
-  position: absolute;
-  .navbar-brand {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-  }
-  ul li a {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    color: #fff !important;
-  }
-  .nav-cta {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    color: #3a3a3a;
-    background: #fffef2;
-    transition: all 0.3s ease;
-  }
-  .nav-cta:hover {
-    transform: scale(1.1);
-    background: #fffbd4;
-  }
-}
 
 .scrolled {
   transition: all 0.2s ease;
   background-color: #fff !important;
+  ul li a {
+    color: #3a3a3a !important;
+  }
+  .ham-menu {
+    color: black !important;
+  }
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 main {
+  background-color: rgba(0, 0, 0, 0.2);
   position: relative;
   height: 100vh;
   display: flex;
   overflow: hidden;
-  background: url('../images/check-in.jpg');
-  background-size: cover;
   .hero-text {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 88px;
     line-height: 132px;
     color: white;
@@ -78,12 +58,12 @@ main {
   .hero-img {
     height: 100%;
     width: 100%;
-    transform: scale(1);
     position: absolute;
     top: 0;
     z-index: -1;
   }
 }
+
 section {
   font-family: Montserrat;
   font-size: 14px;
@@ -127,7 +107,7 @@ section {
 
 @media (min-width: 320px) {
   main {
-    height: 50vh;
+    height: 100vh;
     .main-content {
       .hero-text {
         font-size: 64px;
@@ -136,6 +116,11 @@ section {
       p {
         font-size: 16px !important;
       }
+    }
+    img {
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
     }
   }
   section {
@@ -152,7 +137,7 @@ section {
 }
 @media (min-width: 576px) {
   main {
-    height: 70vh;
+    height: 100vh;
     .main-content {
       .hero-text {
         font-size: 64px;
@@ -177,7 +162,7 @@ section {
 }
 @media (min-width: 768px) {
   main {
-    height: 80vh;
+    height: 100vh;
     .main-content {
       .hero-text {
         font-size: 72px;
@@ -202,7 +187,7 @@ section {
 
 @media (min-width: 992px) {
   main {
-    height: 90vh;
+    height: 100vh;
   }
   section {
     h1 {

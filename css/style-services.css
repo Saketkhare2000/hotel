@@ -64,17 +64,6 @@ footer .logo {
           align-items: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background: #fafafa;
-}
-
 nav {
   position: absolute;
 }
@@ -89,7 +78,12 @@ nav ul li a {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
-  color: #3a3a3a;
+  color: #fff !important;
+}
+
+nav .active a {
+  color: #ffffff !important;
+  font-size: 18px;
 }
 
 nav .nav-cta {
@@ -97,15 +91,38 @@ nav .nav-cta {
   font-style: normal;
   font-weight: bold;
   color: #3a3a3a;
-  background: #fffef2;
+  background: #ffface;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+nav .nav-cta a.book-btn {
+  color: #3a3a3a !important;
+}
+
+nav .nav-cta a.book-btn:hover {
+  text-decoration: none !important;
 }
 
 nav .nav-cta:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background: #fffbd4;
+  background: #fdf7c4;
+}
+
+.ham {
+  color: black !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
 }
 
 .scrolled {
@@ -116,9 +133,18 @@ nav .nav-cta:hover {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.scrolled ul li a {
+  color: #3a3a3a !important;
+}
+
+.scrolled .ham-menu {
+  color: black !important;
+}
+
 main {
+  background-color: rgba(0, 0, 0, 0.5);
   position: relative;
-  height: 95vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,8 +188,6 @@ main .main-content p {
 main .hero-img {
   height: 100%;
   width: 100%;
-  -webkit-transform: scale(1);
-          transform: scale(1);
   position: absolute;
   top: 0;
   z-index: -1;
@@ -317,15 +341,18 @@ section .row2 .r1-img {
 }
 
 @media (min-width: 320px) {
-  main {
-    height: 50vh;
-  }
   main .main-content .hero-text {
     font-size: 48px;
     line-height: 80px;
   }
   main .main-content p {
     font-size: 16px !important;
+  }
+  main img {
+    height: 100vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   section .col1 {
     height: 60vh;
@@ -379,9 +406,6 @@ section .row2 .r1-img {
 }
 
 @media (min-width: 576px) {
-  main {
-    height: 60vh !important;
-  }
   main .main-content .hero-text {
     font-size: 62px;
     line-height: 80px;
@@ -513,9 +537,6 @@ section .row2 .r1-img {
 }
 
 @media (min-width: 768px) {
-  main {
-    height: 80vh;
-  }
   main .main-content .hero-text {
     font-size: 72px;
   }
@@ -670,9 +691,6 @@ section .row2 .r1-img {
 }
 
 @media (min-width: 992px) {
-  main {
-    height: 90vh;
-  }
   section .card1 {
     position: relative;
     display: -webkit-box;

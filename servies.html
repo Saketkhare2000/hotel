@@ -30,9 +30,15 @@
     <title>Services</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
       <div class="container">
-        <a class="navbar-brand mx-auto" href="#">LOGO</a>
+        <a class="navbar-brand mx-auto" href="index.html">
+          <img
+            src="svg/choice-hotels-seeklogo.com.svg"
+            alt="logo"
+            height="30px"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,7 +48,8 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <img src="svg/ham-menu.svg" alt="ham-menu" />
+          <!-- <img src="svg/ham-menu.svg" alt="ham-menu" style="color: white !important;"/> -->
+          <i class="fa fa-bars ham-menu" style="color: white"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,8 +71,8 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <button class="btn nav-cta my-sm-0 mx-2" type="submit">
-              Book Now
+            <button class="btn nav-cta book-btn my-sm-0 mx-2" type="submit">
+              <a href="book.html" class="book-btn">Book Now</a>
             </button>
             <li class="nav-item">
               <a class="nav-link" href="login.html">LogIn / SignUp</a>
@@ -76,13 +83,13 @@
     </nav>
     <main>
       <div class="main-content">
-        <h1 class="hero-text">SERVICES</h1>
+        <h1 class="hero-text">Services</h1>
         <p>Lorem, ipsum dolor</p>
       </div>
       <img
         src="images/services-hero-img 1.png"
         alt="hero-img"
-        class="hero-img img-fluid"
+        class="hero-img d-block img-fluid"
       />
     </main>
     <section class="container">
@@ -255,17 +262,9 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"
-      integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+
+  
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
