@@ -91,6 +91,13 @@ section {
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+        transition: all 0.2s ease;
+        img {
+          transition: all 0.1s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
     }
     .col2 {
@@ -121,6 +128,12 @@ section {
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+        img {
+          transition: all 0.1s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
     }
 
@@ -160,6 +173,12 @@ section {
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+        img {
+          transition: all 0.1s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
     }
     .col2 {
@@ -187,6 +206,12 @@ section {
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+        img {
+          transition: all 0.1s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
     }
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 nav {
   position: absolute;
 }
@@ -11,14 +11,14 @@ nav .navbar-brand {
 
 nav ul li a {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
   color: #fff !important;
+  font-weight: 500;
 }
 
 nav .active a {
   color: #ffffff !important;
   font-size: 18px;
+  font-weight: bold;
 }
 
 nav .nav-cta {
@@ -41,7 +41,7 @@ nav .nav-cta a.book-btn:hover {
 
 nav .nav-cta:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   background: #fdf7c4;
 }
 
@@ -75,7 +75,7 @@ footer .strip1 i {
 footer .strip1 a:hover,
 footer .strip1 i:hover {
   -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 footer .strip2 {
@@ -107,11 +107,11 @@ footer .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .ham {
@@ -137,7 +137,7 @@ footer .logo {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
@@ -160,8 +160,8 @@ footer .logo {
 
 .container form button:hover {
   background-color: #faf4c2 !important;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media (min-width: 768px) {

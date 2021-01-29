@@ -76,14 +76,14 @@ nav .navbar-brand {
 
 nav ul li a {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
   color: #fff !important;
+  font-weight: 500;
 }
 
 nav .active a {
   color: #ffffff !important;
   font-size: 18px;
+  font-weight: bold;
 }
 
 nav .nav-cta {

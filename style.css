@@ -22,6 +22,7 @@ input {
 }
 form {
   padding: 10px;
+  padding-top: 30px;
   margin-left: 50px;
 }
 /* input css end  */
@@ -194,8 +195,9 @@ main .main-hero-text {
   position: relative;
   color: white;
   font-size: 1.5em;
-  left: 10px;
-  text-align: left;
+  left: 60px;
+  top: 15px;
+  font-weight: bolder;
 }
 
 .main_btn {
@@ -264,6 +266,12 @@ main .main-hero-text {
 /* discover end  */
 
 /* media query  */
+@media only screen and (max-width: 980px) {
+  .hero_box {
+    height: 180px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .hero_box ul li {
     padding-right: 55px;
@@ -288,7 +296,7 @@ main .main-hero-text {
     font-size: 28px;
   }
   .hero_box {
-    width: 95%;
+    width: 101%;
   }
   .hero_box button {
     position: relative;
@@ -309,6 +317,9 @@ main .main-hero-text {
   }
   .form {
     margin: auto;
+  }
+  form {
+    padding-top: 10px;
   }
 }
 
@@ -436,19 +447,7 @@ main .main-hero-text {
 .card {
   background: #fffee9;
 }
-.grid {
-  display: grid;
-  width: 114em;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  align-items: start;
-}
 
-.grid-item {
-  background-color: #fffee9;
-  overflow: hidden;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-}
 
 .card-img {
   display: block;
@@ -490,5 +489,9 @@ main .main-hero-text {
   background: #fffee9;
   cursor: pointer;
   width: 50%;
+  transition: all 0.2s ease-in;
+}
+.card-btn:hover {
+  transform: scale(1.1);
 }
 /* card end  */

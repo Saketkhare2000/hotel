@@ -76,14 +76,14 @@ nav .navbar-brand {
 
 nav ul li a {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
   color: #fff !important;
+  font-weight: 500;
 }
 
 nav .active a {
   color: #ffffff !important;
   font-size: 18px;
+  font-weight: bold;
 }
 
 nav .nav-cta {
@@ -228,6 +228,18 @@ section .row1 .col1 .arrow {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section .row1 .col1 .arrow img {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+section .row1 .col1 .arrow img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 section .row1 .col2 {
@@ -261,6 +273,16 @@ section .row1 .col2 .arrow {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+}
+
+section .row1 .col2 .arrow img {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+section .row1 .col2 .arrow img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 section .row1 .r1-img {
@@ -306,6 +328,16 @@ section .row2 .col1 .arrow {
   line-height: 17px;
 }
 
+section .row2 .col1 .arrow img {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+section .row2 .col1 .arrow img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 section .row2 .col2 {
   margin-top: 20vh;
 }
@@ -334,6 +366,16 @@ section .row2 .col2 .arrow {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+}
+
+section .row2 .col2 .arrow img {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+section .row2 .col2 .arrow img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 section .row2 .r1-img {
