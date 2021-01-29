@@ -20,7 +20,7 @@ nav {
     font-style: normal;
     font-weight: bold;
     color: #3a3a3a;
-    background: #ffface;
+    background: #fff7b3;
     transition: all 0.3s ease;
     a.book-btn {
       color: #3a3a3a !important;
@@ -36,4 +36,10 @@ nav {
 }
 .ham {
   color: black !important;
+}
+
+@media (max-width: 992px) {
+  #navbarSupportedContent {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }

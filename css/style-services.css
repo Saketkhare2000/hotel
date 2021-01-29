@@ -91,7 +91,7 @@ nav .nav-cta {
   font-style: normal;
   font-weight: bold;
   color: #3a3a3a;
-  background: #ffface;
+  background: #fff7b3;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -112,6 +112,12 @@ nav .nav-cta:hover {
 
 .ham {
   color: black !important;
+}
+
+@media (max-width: 992px) {
+  #navbarSupportedContent {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 * {
@@ -380,6 +386,10 @@ section .row2 .col2 .arrow img:hover {
 
 section .row2 .r1-img {
   height: 50vh;
+}
+
+.scrolled #navbarSupportedContent {
+  background: none !important;
 }
 
 @media (min-width: 320px) {

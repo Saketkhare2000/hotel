@@ -20,6 +20,9 @@ body {
     color: black !important;
   }
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  #navbarSupportedContent {
+    background: none;
+  }
 }
 main {
   background-color: rgba(0, 0, 0, 0.5);
@@ -100,12 +103,11 @@ section {
     width: 100%;
     font-weight: bold;
     color: #3a3a3a;
-    background: #fffedf;
+    background: #fff7b3;
     transition: all 0.3s ease;
   }
   .submit-btn:hover {
     transform: scale(1.05);
-    background: #fffbd4;
   }
 }
 .faq {

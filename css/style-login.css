@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 nav {
   position: absolute;
 }
@@ -26,7 +26,7 @@ nav .nav-cta {
   font-style: normal;
   font-weight: bold;
   color: #3a3a3a;
-  background: #ffface;
+  background: #fff7b3;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -41,12 +41,18 @@ nav .nav-cta a.book-btn:hover {
 
 nav .nav-cta:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
   background: #fdf7c4;
 }
 
 .ham {
   color: black !important;
+}
+
+@media (max-width: 992px) {
+  #navbarSupportedContent {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 footer {
@@ -75,7 +81,7 @@ footer .strip1 i {
 footer .strip1 a:hover,
 footer .strip1 i:hover {
   -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 footer .strip2 {
@@ -107,11 +113,11 @@ footer .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ham {
@@ -126,6 +132,10 @@ footer .logo {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.scrolled #navbarSupportedContent {
+  background: none !important;
+}
+
 .scrolled ul li a {
   color: #3a3a3a !important;
 }
@@ -137,7 +147,7 @@ footer .logo {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
@@ -161,7 +171,7 @@ footer .logo {
 .container form button:hover {
   background-color: #faf4c2 !important;
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (min-width: 768px) {

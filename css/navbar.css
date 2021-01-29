@@ -25,7 +25,7 @@ nav .nav-cta {
   font-style: normal;
   font-weight: bold;
   color: #3a3a3a;
-  background: #ffface;
+  background: #fff7b3;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -40,11 +40,17 @@ nav .nav-cta a.book-btn:hover {
 
 nav .nav-cta:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
   background: #fdf7c4;
 }
 
 .ham {
   color: black !important;
+}
+
+@media (max-width: 992px) {
+  #navbarSupportedContent {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 /*# sourceMappingURL=navbar.css.map */
