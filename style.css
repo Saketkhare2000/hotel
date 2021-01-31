@@ -146,7 +146,7 @@ main .main-hero-text {
   align-items: center;
   color: white;
   height: 70vh;
-  background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(images/img2.jpg);
+  background:  linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(images/img2.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

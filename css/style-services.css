@@ -234,23 +234,65 @@ section .row1 .col1 .arrow {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 65%;
+  z-index: 1;
+  padding: 1rem;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+  width: 200px;
   line-height: 17px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 section .row1 .col1 .arrow img {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 section .row1 .col1 .arrow img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+section .row1 .col1 .arrow::before {
+  content: '';
+  position: absolute;
+  background-color: #3a3a3a;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  border-radius: 7px;
+}
+
+section .row1 .col1 .arrow:hover {
+  color: white;
+}
+
+section .row1 .col1 .arrow:hover img {
+  -webkit-transform: translateX(350%);
+          transform: translateX(350%);
+}
+
+section .row1 .col1 .arrow:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+section .row1 .col1 .arrow:focus::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 section .row1 .col2 {
@@ -278,22 +320,66 @@ section .row1 .col2 .arrow {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 83%;
+  top: 65%;
+  z-index: 1;
+  padding: 1rem;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+  width: 200px;
   line-height: 17px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 section .row1 .col2 .arrow img {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 section .row1 .col2 .arrow img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+section .row1 .col2 .arrow::before {
+  content: '';
+  position: absolute;
+  background-color: #3a3a3a;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  border-radius: 7px;
+}
+
+section .row1 .col2 .arrow:hover {
+  color: white;
+}
+
+section .row1 .col2 .arrow:hover img {
+  -webkit-transform: translateX(350%);
+          transform: translateX(350%);
+}
+
+section .row1 .col2 .arrow:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+section .row1 .col2 .arrow:focus::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 section .row1 .r1-img {
@@ -332,21 +418,65 @@ section .row2 .col1 .arrow {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 65%;
+  z-index: 1;
+  padding: 1rem;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+  width: 200px;
   line-height: 17px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 section .row2 .col1 .arrow img {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 section .row2 .col1 .arrow img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+section .row2 .col1 .arrow::before {
+  content: '';
+  position: absolute;
+  background-color: #3a3a3a;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  border-radius: 7px;
+}
+
+section .row2 .col1 .arrow:hover {
+  color: white;
+}
+
+section .row2 .col1 .arrow:hover img {
+  -webkit-transform: translateX(350%);
+          transform: translateX(350%);
+}
+
+section .row2 .col1 .arrow:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+section .row2 .col1 .arrow:focus::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 section .row2 .col2 {
@@ -371,22 +501,66 @@ section .row2 .col2 .arrow {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 83%;
+  top: 65%;
+  z-index: 1;
+  padding: 1rem;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+  width: 200px;
   line-height: 17px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 section .row2 .col2 .arrow img {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 section .row2 .col2 .arrow img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+section .row2 .col2 .arrow::before {
+  content: '';
+  position: absolute;
+  background-color: #3a3a3a;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  border-radius: 7px;
+}
+
+section .row2 .col2 .arrow:hover {
+  color: white;
+}
+
+section .row2 .col2 .arrow:hover img {
+  -webkit-transform: translateX(350%);
+          transform: translateX(350%);
+}
+
+section .row2 .col2 .arrow:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+section .row2 .col2 .arrow:focus::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 section .row2 .r1-img {
