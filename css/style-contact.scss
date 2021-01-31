@@ -68,7 +68,18 @@ main {
     object-fit: cover;
   }
 }
-
+.card {
+  .card-header {
+    background-color: #dddddd;
+    .btn {
+      color: #000;
+    }
+  }
+  .card-body{
+    background-color: #3a3a3a;
+    color: white !important;
+  }
+}
 section {
   h1 {
     font-family: Montserrat;

@@ -140,6 +140,18 @@ main .main-hero-text {
   color: white;
   text-align: center;
 }
+.section_two {
+  
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 70vh;
+  background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(images/img2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .section_two h1 {
   text-align: center;
   font-weight: bolder;
@@ -328,6 +340,9 @@ main .main-hero-text {
     padding-top: 10px;
   }
 }
+main img {
+  object-fit: cover;
+}
 
 @media only screen and (max-width: 375px) {
   .hero_box ul li {
@@ -416,7 +431,10 @@ main .main-hero-text {
 }
 .card {
   border: none !important;
-  background: #fffee9;
+  background: #3a3a3a !important;
+}
+.card p {
+  color: white;
 }
 .card-img-top {
   border-radius: 0;
@@ -494,7 +512,7 @@ main .main-hero-text {
   background: #fffee9;
   cursor: pointer;
   width: 50%;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease;
 }
 .card-btn:hover {
   transform: scale(1.1);

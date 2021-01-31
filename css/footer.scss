@@ -3,7 +3,7 @@ footer {
   overflow-x: hidden;
   font-family: Montserrat;
   .strip1 {
-    background-color: #fffef2;
+    background-color: #fffee9;
     color: black;
     h5 {
       font-weight: 500;
@@ -19,22 +19,24 @@ footer {
     }
   }
   .strip2 {
-    background-color: #cae8d9;
+    color: rgb(0, 0, 0);
+    background-color: #dddddd;
     p {
       font-weight: 500;
     }
     a {
-      color: #171b60;
+      color: #000;
       font-weight: 500;
     }
   }
   .strip3 {
     font-weight: 500;
-    background-color: #45ae9f;
-    color: black;
+    background-color: #000;
+    color: #f6f6f6;
   }
+
   a {
-    color: #171b60;
+    color: #f6f6f6;
     font-weight: 500;
   }
   .logo {

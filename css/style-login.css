@@ -17,7 +17,6 @@ nav ul li a {
 
 nav .active a {
   color: #ffffff !important;
-  font-size: 18px;
   font-weight: bold;
 }
 
@@ -62,7 +61,7 @@ footer {
 }
 
 footer .strip1 {
-  background-color: #fffef2;
+  background-color: #fffee9;
   color: black;
 }
 
@@ -85,7 +84,8 @@ footer .strip1 i:hover {
 }
 
 footer .strip2 {
-  background-color: #cae8d9;
+  color: black;
+  background-color: #dddddd;
 }
 
 footer .strip2 p {
@@ -93,18 +93,18 @@ footer .strip2 p {
 }
 
 footer .strip2 a {
-  color: #171b60;
+  color: #000;
   font-weight: 500;
 }
 
 footer .strip3 {
   font-weight: 500;
-  background-color: #45ae9f;
-  color: black;
+  background-color: #000;
+  color: #f6f6f6;
 }
 
 footer a {
-  color: #171b60;
+  color: #f6f6f6;
   font-weight: 500;
 }
 
