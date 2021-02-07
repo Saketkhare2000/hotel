@@ -263,6 +263,7 @@ main .main-hero-text {
   position: relative;
   top: -71px;
   left: -35px;
+  height: 100%;
 }
 
 .discover_heading {
@@ -284,6 +285,10 @@ main .main-hero-text {
 @media only screen and (max-width: 980px) {
   .hero_box {
     height: 180px;
+  }
+  .discover_one img{
+    display: none;
+    height: 70% !important;
   }
 }
 

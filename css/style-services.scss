@@ -100,6 +100,7 @@ section {
         transition: all 0.2s ease-out;
         img {
           transition: all 0.2s ease;
+          object-fit: cover;
           &:hover {
             transform: scale(1.1);
           }
@@ -207,6 +208,7 @@ section {
 
     .r1-img {
       height: 50vh;
+      object-fit: cover;
     }
   }
   .row2 {
@@ -351,6 +353,7 @@ section {
 
     .r1-img {
       height: 50vh;
+      object-fit: cover;
     }
   }
 }
@@ -379,6 +382,7 @@ section {
       height: 60vh;
       .r1-img {
         height: 30vh;
+        object-fit: cover;
       }
       .desc {
         text-align: center;

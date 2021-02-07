@@ -249,6 +249,8 @@ section .row1 .col1 .arrow {
 section .row1 .col1 .arrow img {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section .row1 .col1 .arrow img:hover {
@@ -384,6 +386,8 @@ section .row1 .col2 .arrow:focus::before {
 
 section .row1 .r1-img {
   height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section .row2 {
@@ -565,6 +569,8 @@ section .row2 .col2 .arrow:focus::before {
 
 section .row2 .r1-img {
   height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .scrolled #navbarSupportedContent {
@@ -590,6 +596,8 @@ section .row2 .r1-img {
   }
   section .col1 .r1-img {
     height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   section .col1 .desc {
     text-align: center;
