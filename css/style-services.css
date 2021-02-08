@@ -204,38 +204,30 @@ main img {
      object-fit: cover;
 }
 
-section .row1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.card-body {
+  position: relative !important;
 }
 
-section .row1 .col1 .desc {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 55%;
+.desc {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 59px;
+  font-size: 24px;
   color: #3a3a3a;
 }
 
-section .row1 .col1 .arrow {
-  position: absolute;
+.card-text {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+}
+
+.arrow {
+  position: relative;
   cursor: pointer;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 65%;
   z-index: 1;
-  padding: 1rem;
+  padding: 0.5rem;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -246,19 +238,19 @@ section .row1 .col1 .arrow {
   transition: all 0.2s ease-out;
 }
 
-section .row1 .col1 .arrow img {
+.arrow img {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-section .row1 .col1 .arrow img:hover {
+.arrow img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-section .row1 .col1 .arrow::before {
+.arrow::before {
   content: '';
   position: absolute;
   background-color: #3a3a3a;
@@ -278,299 +270,23 @@ section .row1 .col1 .arrow::before {
   border-radius: 7px;
 }
 
-section .row1 .col1 .arrow:hover {
+.arrow:hover {
   color: white;
 }
 
-section .row1 .col1 .arrow:hover img {
+.arrow:hover img {
   -webkit-transform: translateX(350%);
           transform: translateX(350%);
 }
 
-section .row1 .col1 .arrow:hover::before {
+.arrow:hover::before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-section .row1 .col1 .arrow:focus::before {
+.arrow:focus::before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
-
-section .row1 .col2 {
-  margin-top: 20vh;
-}
-
-section .row1 .col2 .desc {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 70%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 59px;
-  /* identical to box height */
-  color: #3a3a3a;
-}
-
-section .row1 .col2 .arrow {
-  position: absolute;
-  cursor: pointer;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 65%;
-  z-index: 1;
-  padding: 1rem;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  width: 200px;
-  line-height: 17px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-section .row1 .col2 .arrow img {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-section .row1 .col2 .arrow img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-section .row1 .col2 .arrow::before {
-  content: '';
-  position: absolute;
-  background-color: #3a3a3a;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  border-radius: 7px;
-}
-
-section .row1 .col2 .arrow:hover {
-  color: white;
-}
-
-section .row1 .col2 .arrow:hover img {
-  -webkit-transform: translateX(350%);
-          transform: translateX(350%);
-}
-
-section .row1 .col2 .arrow:hover::before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-section .row1 .col2 .arrow:focus::before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-section .row1 .r1-img {
-  height: 50vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-section .row2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section .row2 .col1 .desc {
-  position: absolute;
-  height: 59px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 55%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 59px;
-  /* identical to box height */
-  color: #3a3a3a;
-}
-
-section .row2 .col1 .arrow {
-  position: absolute;
-  cursor: pointer;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 65%;
-  z-index: 1;
-  padding: 1rem;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  width: 200px;
-  line-height: 17px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-section .row2 .col1 .arrow img {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-section .row2 .col1 .arrow img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-section .row2 .col1 .arrow::before {
-  content: '';
-  position: absolute;
-  background-color: #3a3a3a;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  border-radius: 7px;
-}
-
-section .row2 .col1 .arrow:hover {
-  color: white;
-}
-
-section .row2 .col1 .arrow:hover img {
-  -webkit-transform: translateX(350%);
-          transform: translateX(350%);
-}
-
-section .row2 .col1 .arrow:hover::before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-section .row2 .col1 .arrow:focus::before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-section .row2 .col2 {
-  margin-top: 20vh;
-}
-
-section .row2 .col2 .desc {
-  position: absolute;
-  top: 70%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 59px;
-  /* identical to box height */
-  color: #3a3a3a;
-}
-
-section .row2 .col2 .arrow {
-  position: absolute;
-  cursor: pointer;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 65%;
-  z-index: 1;
-  padding: 1rem;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  width: 200px;
-  line-height: 17px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-section .row2 .col2 .arrow img {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-section .row2 .col2 .arrow img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-section .row2 .col2 .arrow::before {
-  content: '';
-  position: absolute;
-  background-color: #3a3a3a;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  border-radius: 7px;
-}
-
-section .row2 .col2 .arrow:hover {
-  color: white;
-}
-
-section .row2 .col2 .arrow:hover img {
-  -webkit-transform: translateX(350%);
-          transform: translateX(350%);
-}
-
-section .row2 .col2 .arrow:hover::before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-section .row2 .col2 .arrow:focus::before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-section .row2 .r1-img {
-  height: 50vh;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .scrolled #navbarSupportedContent {
@@ -591,57 +307,6 @@ section .row2 .r1-img {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  section .col1 {
-    height: 60vh;
-  }
-  section .col1 .r1-img {
-    height: 30vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  section .col1 .desc {
-    text-align: center;
-    font-size: 32px !important;
-    top: 60% !important;
-  }
-  section .col1 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    top: 80% !important;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-  }
-  section .col2 {
-    margin-top: 0px !important;
-    height: 60vh;
-  }
-  section .col2 .r1-img {
-    height: 30vh;
-  }
-  section .col2 .desc {
-    text-align: center;
-    font-size: 32px !important;
-    top: 60% !important;
-  }
-  section .col2 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    top: 80% !important;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-  }
 }
 
 @media (min-width: 576px) {
@@ -652,127 +317,6 @@ section .row2 .r1-img {
   main .main-content p {
     font-size: 16px !important;
   }
-  section .col1 {
-    height: 65vh;
-  }
-  section .col2 {
-    height: 65vh;
-  }
-  section .r1-img {
-    height: 40vh !important;
-  }
-  section .card1 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card1 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  section .card2 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card2 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  section .card3 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card3 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  section .card4 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card4 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
 }
 
 @media (min-width: 768px) {
@@ -781,314 +325,6 @@ section .row2 .r1-img {
   }
   main .main-content p {
     font-size: 16px !important;
-  }
-  section .card1 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    width: 50%;
-    padding: 3rem;
-  }
-  section .card1 .card-img img {
-    height: 40vh;
-  }
-  section .card1 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  section .card2 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    float: right;
-    width: 50%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card2 .card-img img {
-    height: 40vh;
-  }
-  section .card2 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  section .card3 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card3 .card-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section .card3 .card-img img {
-    height: 60vh;
-    width: 80%;
-  }
-  section .card3 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  section .card4 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card4 .card-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section .card4 .card-img img {
-    height: 60vh;
-    width: 80%;
-  }
-  section .card4 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-}
-
-@media (min-width: 992px) {
-  section .card1 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card1 .card-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section .card1 .card-img img {
-    height: 30vh;
-    width: 80%;
-  }
-  section .card1 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  section .card2 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card2 .card-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section .card2 .card-img img {
-    height: 60vh;
-    width: 80%;
-  }
-  section .card2 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  section .card3 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card3 .card-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section .card3 .card-img img {
-    height: 60vh;
-    width: 80%;
-  }
-  section .card3 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  section .card4 {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80vh;
-    padding: 3rem;
-  }
-  section .card4 .card-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section .card4 .card-img img {
-    height: 60vh;
-    width: 80%;
-  }
-  section .card4 .arrow {
-    position: absolute;
-    cursor: pointer;
-    left: 162px;
-    top: 89%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
   }
 }
 /*# sourceMappingURL=style-services.css.map */

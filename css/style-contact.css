@@ -296,7 +296,7 @@ section .submit-btn:hover {
     height: 100vh;
   }
   main .main-content .hero-text {
-    font-size: 64px;
+    font-size: 48px;
     line-height: 80px;
   }
   main .main-content p {

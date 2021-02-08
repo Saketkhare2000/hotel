@@ -26,7 +26,18 @@ form {
   margin-left: 50px;
 }
 /* input css end  */
-
+.submit-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  width: 100%;
+  font-weight: bold;
+  color: #3a3a3a;
+  background: #fff7b3;
+  transition: all 0.3s ease;
+}
+.submit-btn:hover {
+  transform: scale(1.05);
+}
 /* navbar  */
 nav .navbar-brand {
   font-family: 'Montserrat';
@@ -139,6 +150,13 @@ main .main-hero-text {
   font-size: 54px;
   color: white;
   text-align: center;
+}
+.form-h1{
+  font-family: Montserrat;
+  font-weight: 600;
+  color: #3a3a3a;
+  font-size: 2.5rem;
+  padding: 1rem 0rem;
 }
 .section_two {
 
@@ -447,6 +465,13 @@ main img {
   border-radius: 0;
 }
 @media only screen and (max-width: 768px) {
+  .hero-text{
+    font-size: 48px !important;
+    line-height: normal !important;
+  }
+  .main-content p{
+    font-size: 16px !important;
+  }
   .abt_span {
     top: 75%;
   }
@@ -502,8 +527,6 @@ main img {
 
 .card-text {
   font-size: 1rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.7;
   color: #3d3d3d;
   margin-bottom: 2.5rem;
   text-align: center;
