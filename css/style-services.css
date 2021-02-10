@@ -197,6 +197,8 @@ main .hero-img {
   position: absolute;
   top: 0;
   z-index: -1;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 main img {

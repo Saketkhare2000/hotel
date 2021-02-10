@@ -65,6 +65,8 @@ main {
     z-index: -1;
   }
   img{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
     object-fit: cover;
   }
 }

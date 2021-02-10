@@ -204,6 +204,8 @@ main .hero-img {
 }
 
 main img {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
   -o-object-fit: cover;
      object-fit: cover;
 }
