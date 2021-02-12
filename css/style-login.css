@@ -150,6 +150,7 @@ footer .logo {
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+  scroll-behavior: smooth;
 }
 
 .bd-placeholder-img {

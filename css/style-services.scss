@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; scroll-behavior: smooth;
 }
 body {
   background: #fafafa;
@@ -31,7 +31,7 @@ main {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 88px;
+    font-size: 108px;
     line-height: 132px;
     color: white;
     text-align: center;
@@ -59,24 +59,25 @@ main {
     width: 100%;
     position: absolute;
     top: 0;
-    z-index: -1;  filter: blur(2px);
+    z-index: -1;
+    filter: blur(2px);
     -webkit-filter: blur(2px);
   }
   img {
     object-fit: cover;
   }
 }
-.card-body{
+.card-body {
   position: relative !important;
 }
-.desc{
+.desc {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   color: #3a3a3a;
 }
-.card-text{
+.card-text {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 14px;
@@ -153,7 +154,6 @@ main {
       object-fit: cover;
     }
   }
-  
 }
 
 @media (min-width: 576px) {
@@ -168,22 +168,19 @@ main {
       }
     }
   }
-  
 }
 @media (min-width: 768px) {
   main {
     .main-content {
       .hero-text {
-        font-size: 72px;
+        font-size: 80px;
       }
       p {
         font-size: 16px !important;
       }
     }
   }
-  
 }
 
 @media (min-width: 992px) {
-  
 }

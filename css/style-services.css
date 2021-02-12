@@ -125,6 +125,7 @@ nav .nav-cta:hover {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -161,7 +162,7 @@ main .hero-text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 88px;
+  font-size: 108px;
   line-height: 132px;
   color: white;
   text-align: center;
@@ -323,7 +324,7 @@ main img {
 
 @media (min-width: 768px) {
   main .main-content .hero-text {
-    font-size: 72px;
+    font-size: 80px;
   }
   main .main-content p {
     font-size: 16px !important;

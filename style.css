@@ -4,10 +4,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* input css  */
-input {
+/* input {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
@@ -19,7 +20,7 @@ input {
 
 ::placeholder {
   color: white;
-}
+} */
 form {
   padding: 10px;
   padding-top: 30px;
@@ -144,17 +145,16 @@ main .hero-img {
   z-index: -1;
   filter: blur(2px);
   -webkit-filter: blur(2px);
-
 }
 main .main-hero-text {
   font-family: Montserrat;
-  font-style: norm  al;
+  font-style: norm al;
   font-weight: 600;
   font-size: 54px;
   color: white;
   text-align: center;
 }
-.form-h1{
+.form-h1 {
   font-family: Montserrat;
   font-weight: 600;
   color: #3a3a3a;
@@ -162,12 +162,12 @@ main .main-hero-text {
   padding: 1rem 0rem;
 }
 .section_two {
-
   display: flex;
   align-items: center;
   color: white;
   height: 70vh;
-  background:  linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(images/img2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/img2.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -318,12 +318,12 @@ main .main-hero-text {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .arrow img:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .arrow::before {
@@ -336,13 +336,13 @@ main .main-hero-text {
   bottom: 0;
   right: 0;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-transition: -webkit-transform 200ms ease-in-out;
   transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
   -webkit-transform-origin: left;
-          transform-origin: left;
+  transform-origin: left;
   border-radius: 7px;
 }
 
@@ -352,7 +352,7 @@ main .main-hero-text {
 
 .arrow:hover img {
   -webkit-transform: translateX(350%);
-          transform: translateX(350%);
+  transform: translateX(350%);
 }
 
 .arrow:hover::before {
@@ -383,7 +383,7 @@ main .main-hero-text {
   .section_two {
     height: 80vh;
     text-align: center;
-    padding-bottom:2rem ;
+    padding-bottom: 2rem;
     font-size: 14px;
     line-height: 160%;
   }
@@ -533,11 +533,11 @@ main img {
   border-radius: 0;
 }
 @media only screen and (max-width: 768px) {
-  .hero-text{
+  .hero-text {
     font-size: 48px !important;
     line-height: normal !important;
   }
-  .main-content p{
+  .main-content p {
     font-size: 16px !important;
   }
   .abt_span {
