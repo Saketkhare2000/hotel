@@ -108,7 +108,7 @@ main .hero-text {
   font-style: normal;
   font-weight: 600;
   font-size: 88px;
-  line-height: 132px;
+  line-height: 80px;
   color: white;
   text-align: center;
 }
@@ -153,6 +153,11 @@ main .main-hero-text {
   font-size: 88px;
   color: white;
   text-align: center;
+  line-height: 125px;
+}
+main p {
+  font-family: Montserrat;
+  font-size: 20px !important;
 }
 .form-h1 {
   font-family: Montserrat;
