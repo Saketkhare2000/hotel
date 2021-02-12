@@ -150,7 +150,7 @@ main .main-hero-text {
   font-family: Montserrat;
   font-style: norm al;
   font-weight: 600;
-  font-size: 54px;
+  font-size: 88px;
   color: white;
   text-align: center;
 }
@@ -367,18 +367,18 @@ main .main-hero-text {
 /* discover end  */
 
 /* media query  */
-@media only screen and (max-width: 980px) {
-  .hero_box {
-    height: 180px;
+@media (max-width: 576px){
+  .main-hero-text {
+    font-size: 64px !important;
+    line-height: 80px;
   }
 }
-
-@media only screen and (max-width: 1024px) {
-  .hero_box ul li {
-    padding-right: 55px;
+@media (max-width: 768px){
+  .main-hero-text {
+    font-size: 72px !important;
+    line-height: 80px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .section_two {
     height: 80vh;
@@ -393,59 +393,20 @@ main .main-hero-text {
   .discover_two .d1-img {
     position: static;
   }
-  .hero_box ul li {
-    padding-right: 38px;
-    font-size: 12px;
-  }
-  .hero_box ul {
-    top: 30px;
-  }
-  .hero_content p {
-    font-size: 28px;
-  }
-  .hero_box {
-    width: 101%;
-  }
-  .hero_box button {
-    position: relative;
-    left: 105px;
-  }
+
 }
 
 @media only screen and (max-width: 425px) {
   .main-hero-text {
     font-size: 40px !important;
   }
-  .hero_box button {
-    left: 60px;
-  }
-  .hero_box ul li {
-    padding-right: 30px;
-    font-size: 12px;
-  }
-  .hero_box {
-    height: 225px;
-  }
-  .form {
-    margin: auto;
-  }
-  form {
-    padding-top: 10px;
-  }
+
 }
 main img {
   object-fit: cover;
 }
 
-@media only screen and (max-width: 375px) {
-  .hero_box ul li {
-    padding-right: 10px;
-    font-size: 12px;
-  }
-  .hero_box ul li {
-    padding-right: 10px;
-  }
-}
+
 /* media query end  */
 
 /* about CSS */
